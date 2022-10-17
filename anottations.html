@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Sistema de Recados</title>
+  </head>
+  <body class="container-fluid d-flex flex-column">
+    <div
+      id="anottationPageExposed"
+      class="container-fluid p-3 mb-2 bg-dark text-white"
+    >
+      <header class="d-flex col-12 align-items-end">
+        <h1 class="display-8">Meus recados</h1>
+      </header>
+
+      <div class="p-3 mb-2 bg-dark text-white">
+        <div class="top-bar"></div>
+        <div class="form-group">
+          <div class="input-group d-flex">
+            <input
+              type="text"
+              id="tituloRecado"
+              class="col-3"
+              placeholder="Descrição"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <input
+              type="text"
+              id="descricaoRecado"
+              class="form-control"
+              placeholder="Detalhamento"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+              <button
+                onclick="adicionarRecado(event)"
+                class="btn btn-primary"
+                type="button"
+                id="salvarRecadoBtn"
+              >
+                Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Título</th>
+              <th scope="col">Descricão</th>
+              <th scope="col">Ação</th>
+            </tr>
+          </thead>
+          <tbody id="listaRecados"></tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

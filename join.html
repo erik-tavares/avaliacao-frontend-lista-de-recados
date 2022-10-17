@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Cadastro</title>
+  </head>
+
+  <body class="container-fluid d-flex flex-column">
+    <div id="joinPageExposed" class="container-fluid col-12 d-flex">
+      <div class="col-6 d-flex left"></div>
+
+      <div
+        class="col-6 d-flex right align-items-end p-3 mb-2 bg-dark text-white"
+      >
+        <form class="form-group direction-column justify-content-center">
+          <div class="form-group direction-column justify-content-center">
+            <h4>Ainda não tem conta? Crie uma agora!</h4>
+          </div>
+          <button
+            onclick="clickLogar()"
+            type="button"
+            class="btn btn-link container"
+          >
+            Voltar para tela de login
+          </button>
+          <hr />
+          <div class="form-group justify-content-lg-start">
+            <label class="form-control-lg text-uppercase">
+              <h5>Criar uma conta</h5>
+            </label>
+            <div class="form-group d-flex col-8">
+              <input
+                type="text"
+                class="form-control"
+                id="usernameInput"
+                placeholder="Username"
+              />
+            </div>
+            <div class="form-group d-flex col-8">
+              <input
+                type="password"
+                class="form-control"
+                id="passwordInput"
+                placeholder="Senha"
+              />
+            </div>
+            <div class="form-group d-flex col-8">
+              <input
+                type="password"
+                class="form-control"
+                id="repeatPasswordInput"
+                placeholder="Confirme a senha"
+              />
+            </div>
+            <hr />
+            <div class="form-group d-flex col-12">
+              <button
+                type="button"
+                id="addUserBtn"
+                onclick="saveNewUser(event)"
+                class="btn btn-success btn-block text-uppercase"
+              >
+                Criar a conta
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
